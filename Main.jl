@@ -30,11 +30,9 @@ end
 
 # Exibir resultado
 println("Distribuição de Probabilidade Final após $num_interacoes interações:")
-println("Página 1: $(round(estado_atual[1]*100, digits=2))%")
-println("Página 2: $(round(estado_atual[2]*100, digits=2))%")
-println("Página 3: $(round(estado_atual[3]*100, digits=2))%") 
-println("Página 4: $(round(estado_atual[4]*100, digits=2))%")
-println("Página 5: $(round(estado_atual[5]*100, digits=2))%")
+for i in 1:num_interacoes
+    println("Página $i: $(round(estado_atual[i]*100, digits=2))%")
+end    
 
 
 end
